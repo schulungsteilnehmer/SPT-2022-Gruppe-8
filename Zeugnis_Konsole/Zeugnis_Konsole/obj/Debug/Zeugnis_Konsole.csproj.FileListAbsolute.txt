@@ -1,0 +1,6 @@
+C:\Users\Anna\Documents\SharpDevelop Projects\Zeugnis_Konsole\Zeugnis_Konsole\bin\Debug\Zeugnis_Konsole.exe.config
+C:\Users\Anna\Documents\SharpDevelop Projects\Zeugnis_Konsole\Zeugnis_Konsole\bin\Debug\Zeugnis_Konsole.exe
+C:\Users\Anna\Documents\SharpDevelop Projects\Zeugnis_Konsole\Zeugnis_Konsole\bin\Debug\Zeugnis_Konsole.pdb
+C:\Users\Anna\Documents\SharpDevelop Projects\Zeugnis_Konsole\Zeugnis_Konsole\obj\Debug\Zeugnis_Konsole.csprojResolveAssemblyReference.cache
+C:\Users\Anna\Documents\SharpDevelop Projects\Zeugnis_Konsole\Zeugnis_Konsole\obj\Debug\Zeugnis_Konsole.exe
+C:\Users\Anna\Documents\SharpDevelop Projects\Zeugnis_Konsole\Zeugnis_Konsole\obj\Debug\Zeugnis_Konsole.pdb
