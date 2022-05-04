@@ -14,74 +14,93 @@ namespace Zeugnis_Konsole
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Namen eingeben:");
+			Console.WriteLine( "===========Zeugnis==========");
+				
+			Console.Write("Namen : ");
 			string name;
 			name = Console.ReadLine();
 			
-			Console.WriteLine();
-			Console.WriteLine("Datum angeben:");
+			Console.Write("Datum : ");
 			string datum;
 			datum = Console.ReadLine();
 			
-			Console.WriteLine();
-			Console.WriteLine("Noten eingeben");
+			Console.WriteLine("============================");
 			
 			Console.WriteLine();
-			Console.WriteLine("Mathe LK");
+			Console.WriteLine("Noten : ");
+			
+			int Zähler = 0; 
+			
+			Console.WriteLine();
 			int Mathe; 
+			Console.Write("Mathe (LK) : " );
 			Mathe = Convert.ToInt32(Console.ReadLine());
+			if (Mathe < 5) 
+				 Zähler = Zähler + 1; 
 			
-			Console.WriteLine();
-			Console.WriteLine("Deutsch");
+			Console.Write("Deutsch    : ");
 			int Deutsch; 
 			Deutsch = Convert.ToInt32(Console.ReadLine());
+			if (Deutsch < 5) 
+				Zähler = Zähler + 1; 
 			
-			Console.WriteLine();
-			Console.WriteLine("Bio LK");
+			Console.Write("Bio (LK)   : ");
 			int Bio; 
 			Bio = Convert.ToInt32(Console.ReadLine());
+			if (Bio < 5 ) 
+				Zähler = Zähler + 1;
 			
-			Console.WriteLine();
-			Console.WriteLine("Englisch"); 
+			Console.Write("Englisch   : "); 
 			int Englisch; 
 			Englisch = Convert.ToInt32(Console.ReadLine());
-			
-			Console.WriteLine(); 
-			Console.WriteLine("Physik"); 
+			if (Englisch < 5)
+				Zähler = Zähler + 1;
+			 
+			Console.Write("Physik     : "); 
 			int Physik;
 			Physik = Convert.ToInt32(Console.ReadLine());
+			if (Physik < 5) 
+				Zähler = Zähler + 1; 
 			
-			Console.WriteLine(); 
-			Console.WriteLine("Chemie"); 
+			Console.Write("Chemie     : "); 
 			int Chemie; 
 			Chemie = Convert.ToInt32(Console.ReadLine());
+			if (Chemie < 5)
+				Zähler = Zähler + 1; 
 			
-			Console.WriteLine();
-			Console.WriteLine("Politik"); 
+			Console.Write("Politik    : "); 
 			int Politik; 
 			Politik = Convert.ToInt32(Console.ReadLine()); 
+			if (Politik < 5)
+				Zähler = Zähler + 1; 
 			
-			Console.WriteLine(); 
-			Console.WriteLine("Geschichte"); 
+			Console.Write("Geschichte : "); 
 			int Geschichte; 
 			Geschichte = Convert.ToInt32(Console.ReadLine());
+			if (Geschichte < 5) 
+				Zähler = Zähler + 1; 
 			
 			Console.WriteLine(); 
-			Console.WriteLine("Notendurchschnitt");
+			Console.Write("Notendurchschnitt : ");
 			double Ergebnis;
 			Ergebnis = (2*Mathe+2*Bio+Deutsch+Englisch+Physik+Chemie+Geschichte+Politik)/10;
 			Ergebnis = (17-Ergebnis)/3;
-			Console.WriteLine(Ergebnis);
-			
+			Console.WriteLine( Math.Round(Ergebnis, 1));
+			Console.WriteLine("============================");
+				
 			Console.WriteLine();
-			Console.WriteLine("Unentschuldigte Fehltage eintragen:");
+			Console.Write("Fehltage eintragen : ");
 			int Fehltage;
 			Fehltage = Convert.ToInt32(Console.ReadLine());
-			if (Fehltage > 29) && if ( 
-				Console.WriteLine("Der Schüler wird nicht versetzt.");
-			if (
+			if (Fehltage < 29) 
+				if ( Zähler < 2)
+					Console.WriteLine("Der Schüler wird versetzt.");
+					else 
+					Console.WriteLine("Der Schüler wird nicht versetzt.");
+			else 
+					Console.WriteLine("Der Schüler wird nicht versetzt.");
 			
-			Console.WriteLine(); 
+			Console.WriteLine();
 			Console.WriteLine(name);
 			Console.WriteLine(datum);
 			Console.WriteLine(Mathe); 
